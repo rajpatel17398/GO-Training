@@ -17,5 +17,6 @@ func main() {
 
 	fmt.Println("this changes happened before second commit")
 	fmt.Println("this changes happened on github")
+	fmt.Println("this changes happened before pushing")
 
 }
