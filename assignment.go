@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hellooo")
+	// fmt.Println("Hellooo")
 	fmt.Println(testPackage.Cal(2, 3))
 	fmt.Println(testP2.Sub(5, 1))
 
