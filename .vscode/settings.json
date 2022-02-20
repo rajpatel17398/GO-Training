@@ -1,0 +1,5 @@
+{
+    "code-runner.clearPreviousOutput": true,
+    "python.autoComplete.addBrackets": true,
+    "python.analysis.completeFunctionParens": true
+}
