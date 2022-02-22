@@ -15,7 +15,7 @@ func main() {
 	if err != nil {
 		panic(err) //panic() just shut down the program and print the error
 	}
-	length, err := io.WriteString(file, content) //for getting the lenght of the file we use io.WriteString() wiht filename, and content which we have to put inside
+	length, err := io.WriteString(file, content) //for writing the content in file we use io.WriteString() wiht filename, and content which then give the lengh of the file strings
 	if err != nil {
 		panic(err) //panic() just shut down the program and print the error
 	}
