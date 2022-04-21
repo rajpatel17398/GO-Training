@@ -9,6 +9,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 // book struct (model)
@@ -103,6 +104,21 @@ func main() {
 	books = append(books, Book{ID: "1", Isbn: "448999", Title: "Book one", Author: &Author{Firstname: "Raj", Lastname: "Patel"}})
 	books = append(books, Book{ID: "2", Isbn: "449000", Title: "Book two", Author: &Author{Firstname: "Raj2", Lastname: "Patel"}})
 	books = append(books, Book{ID: "3", Isbn: "449001", Title: "Book three", Author: &Author{Firstname: "Raj3", Lastname: "Patel"}})
+	// client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://restapidb:restapidb@cluster0.wkca4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"))
+
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+	// err = client.Connect(ctx)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// defer client.Disconnect(ctx)
+	// err = client.Ping(ctx, readpref.Primary())
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 
 	//route handlers / Endpoint
 

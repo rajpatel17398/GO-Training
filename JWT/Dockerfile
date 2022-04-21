@@ -20,7 +20,7 @@ RUN go mod download
 COPY . .
 
 # we need to specify the port number
-EXPOSE 8080
+EXPOSE 8084
 
 # now we habe to build the application
 RUN go build

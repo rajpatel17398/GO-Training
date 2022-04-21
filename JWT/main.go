@@ -12,6 +12,6 @@ func main() {
 	http.HandleFunc("/refresh", Refresh)
 
 	// now we have to start the function
-	log.Fatal(http.ListenAndServe(":8080", nil)) // we are not using any router framework so we write nil here.
+	log.Fatal(http.ListenAndServe(":8084", nil)) // we are not using any router framework so we write nil here.
 
 }
